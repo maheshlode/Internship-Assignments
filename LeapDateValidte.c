@@ -11,11 +11,11 @@ void isLeapDate(int date, int month, int year)
         {
             printf("date is valid");
         }
-        else if((date >= 1 && date <= 30) && (month == 4 || month == 6 || month == 9 || month == 11 ||))
+        else if((date >= 1 && date <= 30) && (month == 4 || month == 6 || month == 9 || month == 11 ))
         {
             printf("date is valid");
         }
-        else if()
+        //else if()
     }
     if((year%4==0 && year%400==0) || (year%100!=0))
     {
@@ -25,7 +25,7 @@ void isLeapDate(int date, int month, int year)
 int main() {
     int dd,mm,yy;
     
-    isLeapDate()
+    isLeapDate(10,2,2020);
 
     return 0;
 }
