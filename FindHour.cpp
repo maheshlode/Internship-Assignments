@@ -12,6 +12,8 @@ int main()
 	
 	cout<<"Enter the minute of the time :"<<endl;
 	cin>>minutes;
+
+	cout<<"hours"<<endl;
 	
 	
 	if(num)
