@@ -1,4 +1,4 @@
 src/*.exe
 build/*.c
 
-*.c
+*.exe
