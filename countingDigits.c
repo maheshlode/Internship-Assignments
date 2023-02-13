@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-int printDigits(int iNum);
-int testNoofDigits(int expectedNumOfDigits, int );
+/* Declaring function prototype */
+int countNumbersOfDigits(int);
+int testNoofDigits(int, int );
 int count = 0;
 
 int main()
@@ -63,7 +63,7 @@ int testNoofDigits(int digits, int n)
 	}
 }
 
-int printDigits(int iNum)
+int countNumbersOfDigits(int iNum)
 {
     while(iNum!=0)
     {
