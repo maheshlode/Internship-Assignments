@@ -23,7 +23,7 @@ void main(void)
         }
         else
         {
-            minutes = minutes-x;
+            minutes = minutes-fasterMinutes;
 			hour = hour-1;
 			actualHour++; 
         }
