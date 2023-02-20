@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Responsive Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.col-1 {
+			background-color: rgb(40, 12, 12);
+			color: white;
+		}
+
+		.col-2 {
+			background-color: rgb(239, 153, 121);
+			color: white;
+		}
+
+		.col-3 {
+			background-color: rgb(208, 188, 11);
+			color: white;
+		}
+
+		.col-4 {
+			background-color: rgb(18, 18, 43);
+			color: white;
+		}
+
+		.col-5 {
+			background-color: rgb(140, 140, 245);
+			color: white;
+		}
+
+		.col-6 {
+			background-color: green;
+			color: white;
+		}
+
+		.col-7 {
+			background-color: maroon;
+			color: white;
+		}
+
+		@media screen and (min-width: 1200px) {
+			.column {
+				-ms-flex: 50%;
+				flex: 50%;
+				max-width: 50%;
+			}
+		}
+
+		@media screen and (min-width: 720px) {
+			.column {
+				-ms-flex: 100%;
+				flex: 100%;
+				max-width: 100%;
+			}
+		}
+
+
+
+		.row {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			padding: 0 4px;
+		}
+
+		h2,
+		p {
+			text-align: center;
+			padding: 10px;
+		}
+
+		.button {
+			padding: 8px;
+			opacity: 0.5;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="row">
+		<div class="column col-1">
+			<h2>HARVESTING</h2>
+			<p>Harvesting is the process of gathering<br>
+				a ripe crop from the fields. Reaping <br>
+				is the cutting of grain or pulse for <br>
+				harvest, typically using a scythe, sickle, <br>
+				or reaper.</p>
+			<center><button class="button button-1">Learn More</button></center>
+		</div>
+		<div class="column col-2">
+			<h2>PROCESSING</h2>
+			<p>Harvesting is the process of gathering<br>
+				a ripe crop from the fields. Reaping <br>
+				is the cutting of grain or pulse for <br>
+				harvest, typically using a scythe, sickle, <br>
+				or reaper.</p>
+			<center><button class="button button-1">Learn More</button></center>
+		</div>
+		<div class="column col-3">
+			<h2>ROASTING</h2>
+			<p>Harvesting is the process of gathering<br>
+				a ripe crop from the fields. Reaping <br>
+				is the cutting of grain or pulse for <br>
+				harvest, typically using a scythe, sickle, <br>
+				or reaper.</p>
+			<center><button class="button button-1">Learn More</button></center>
+		</div>
+
+		<div class="column col-4">
+			<h2>GRINDING</h2>
+			<p>Harvesting is the process of gathering<br>
+				a ripe crop from the fields. Reaping <br>
+				is the cutting of grain or pulse for <br>
+				harvest, typically using a scythe, sickle, <br>
+				or reaper.</p>
+			<center><button class="button button-1">Learn More</button></center>
+		</div>
+		<div class="column col-5">
+			<h2>PACKAGING</h2>
+			<p>Harvesting is the process of gathering<br>
+				a ripe crop from the fields. Reaping <br>
+				is the cutting of grain or pulse for <br>
+				harvest, typically using a scythe, sickle, <br>
+				or reaper.</p>
+			<center><button class="button button-1">Learn More</button></center>
+		</div>
+		<div class="column col-6">
+			<h2>BREWING</h2>
+			<p>Harvesting is the process of gathering<br>
+				a ripe crop from the fields. Reaping <br>
+				is the cutting of grain or pulse for <br>
+				harvest, typically using a scythe, sickle, <br>
+				or reaper.</p>
+			<center><button class="button button-1">Learn More</button></center>
+		</div>
+
+		<div class="column col-7">
+			<h2>THE PERFECT CUP</h2>
+			<p>Harvesting is the process of gathering<br>
+				a ripe crop from the fields. Reaping <br>
+				is the cutting of grain or pulse for <br>
+				harvest, typically using a scythe, sickle, <br>
+				or reaper.</p>
+			<center><button class="button button-1">Learn More</button></center>
+		</div>
+	</div>
+</body>
+
+</html>
