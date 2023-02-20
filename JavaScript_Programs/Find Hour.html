@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<script>
+    function findActualHour(indicatedHour, indicatedMin, extraTime) {
+        let actualHour = 0;
+        let actualMinute = 0;
+        let hour = 0;
+
+        if (indicatedHour < 0 || indicatedMin < 0) {
+            return false;
+        }
+
+        while (actualHour < indicatedHour) {
+            if ((actualMinute + extraTime) < 60) {
+                actualHour++;
+                actualMinute += extraTime;
+                hour++;
+            } else if ((actualMinute + extraTime) >= 60) {
+                actualHour += 2;
+                actualMinute = (actualMinute + extraTime) - 60;
+                hour++;
+            }
+        }
+        return hour;
+    }
+
+    function testFindActualHourFunction(indicatedHour, indicatedMin, extraTime, expectedResult) {
+        if (findActualHour(indicatedHour, indicatedMin, extraTime) === expectedResult) {
+            return 'Test case is successfull'
+        }
+        else {
+            return 'Test case is failed'
+        }
+
+    }
+
+    console.log('Test Cases : ');
+    console.log('\nIndicated Time \t Actual Result \t Expected Result \t Test Case');
+    console.log('9:20\t\t' + findActualHour(9, 20, 10) + '\t\t' + 8 + '\t\t' + testFindActualHourFunction(9, 20, 10, 8));
+    console.log('12:30\t\t' + findActualHour(12, 30, 15) + '\t\t' + 10 + '\t\t' + testFindActualHourFunction(12, 30, 15, 10));
+    console.log('-12:30\t\t' + findActualHour(-12, 30, 15) + '\t\t' + false + '\t\t' + testFindActualHourFunction(-12, 30, 15, false));
+
+</script>
+
+</html>
