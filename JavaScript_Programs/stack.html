@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <script>
+        class Stack {
+            constructor() {
+                this.value = [];
+            }
+
+            /* insert the value at the end of the stack */
+            push(data) {
+                this.value.push(data)
+            }
+
+            /* remove the last value from the stack */
+            pop() {
+                if (this.value.length === 0) {
+                    return ("UNDERFLOW")
+                } else {
+                    this.value.pop()
+                }
+            }
+
+            /* to return the top most value from the stack */
+            peek() {
+                return (this.value[this.value.length - 1]);
+            }
+
+            isEmpty() {
+                return (this.value.length == 0);
+            }
+
+            displayStack() {
+                let str = "";
+                for (let i = 0; i < this.value.length; i++) {
+                    str = str + " " + this.value[i];
+                }
+                return (str);
+            }
+            insertAt(array, index, ...elementsArray) {
+                array.splice(index, 0, ...elementsArray);
+            }
+
+            lengthOfArray() {
+                return (this.value.length)
+            }
+
+            isElementInStack(arr, target) {
+                for (let i in arr) {
+                    if (this.arr[i] === target){
+                        return true
+                    }
+                }
+                return false
+            }
+        }
+
+        const stack = new Stack();
+
+        stack.push(123);
+        stack.push(22);
+        stack.push(13);
+        stack.push(113);
+        stack.push(153);
+
+        console.log(stack.displayStack());
+
+        console.log(stack.peek());
+
+        console.log(stack.pop());
+
+        console.log(stack.displayStack());
+
+        console.log(stack.lengthOfArray());
+
+        console.log(stack.isElementInStack(this.value, 13));
+
+
+
+    </script>
+</head>
+
+</html>
