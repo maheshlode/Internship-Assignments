@@ -33,7 +33,7 @@ int main()
     printf("Enter position of the Horse(Knight) according to above given chess board:");
     scanf("%d",&horse);
     
-    int inputArray[]={queen,horse};
+    int inputArray[1][2]={{queen},{horse}};
     
 //	for(i=0;i<2;i++)
 //	{
@@ -44,17 +44,59 @@ int main()
     {
         for(j=0;j<8;j++)
         {
-        	if(array[i][j]==inputArray[i])
+        	if(array[i][j]==inputArray[i][j])
         	{
-        		printf("");
+        		printf("%d\t%d",i,j);
 			}
 		}
-        printf("\n");
+//        printf("\n");
     }
+    
+    // checking where knight attacks the queen or not
+    //horse=43;
+    //queen=25;
     
     for(i=0;i<8;i++)
     {
-    		
+        for(j=0;j<8;j++)
+        {
+        	// horse=43 and queen=35
+        	/* I am trying to to check the position entered with the chess board position 
+				as the queen and horse move on checkboard increment/decrement the counter accordingly in the for loop
+				such that when the position satiesfies the particular if() condition then one of them will attack other one
+			*/
+        	if(array[i][j]==inputArray[horse][queen])
+            {
+    	        printf("Knight attacks queen");
+			}
+//			else if(array[i][j]==inputArray[horse][queen])
+//			{
+//				printf("knight attacks queen");
+//			}
+		}
+    }
+    
+    // queen position on chess board 00
+    int queenRow=0;
+    int queenColumn=0;
+    
+    // horse position on chess board 07
+    int horseRow=0;
+    int horseColumn=7;
+    
+    // if queen and horse are in the same row 
+    if(queenRow==horseRow)
+    {
+    	printf("\nqueen attacks knight");
+	}
+	// if queen and horse are in the same column
+	else if(queenColumn==horseColumn)
+	{
+		printf("\nqueen attacks knight");
+	}
+	else
+	{
+		printf("No attack happened");
 	}
     return 0;
 }
