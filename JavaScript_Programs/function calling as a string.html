@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <script>
+        function helloWorld()
+        {
+            console.log("In Hello World Function")
+        }
+
+        function hellowWindow()
+        {
+            console.log("In Hello Window Function ")
+            
+        }
+
+        // storing function name as a string in strFunction function
+        let strFunction="helloWorld"
+
+        // calling helloWorld function 
+        window[strFunction]()
+
+        let strFunction1="hellowWindow"
+        window[strFunction1]()
+        
+    </script>
+</head>
+</html>
