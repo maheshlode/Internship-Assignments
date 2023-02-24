@@ -4,11 +4,11 @@ function ToDoInput(props)
 {
     const [inputText,setInputText]=useState('');
     const handlingEnterKey=(e)=>{
-        // 13 is the keyCode of Enter key so after pressing enter key the task will get add to To Do List
+        // 13 is the keyCode of Enter key so after pressing enter key the task will get add to To Do List trying to implement it
         if(e.keyCode===13)
         {
-            props.addTaskToList(inputText)
-            setInputText("")
+            // props.addTaskToList()
+            // setInputText("")
         }
     }
     return(

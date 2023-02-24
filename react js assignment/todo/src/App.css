@@ -9,6 +9,34 @@
 .todo-container
 {
   text-align: center;
+  justify-content: center;
+}
+.todo-input-container
+{
+  margin-left: 10px;
+  width: 50%;
+  height: 40px;
+  border-radius: 14px;
+  border:1px solid black;
+  padding-left: 10px;  
+  outline: none;
+  font-family: Cambria;
+  font-size: large;
+}
+
+.add-task-btn
+{
+  background-color: rgb(140, 210, 140);
+  border-radius: 10px;
+  margin-left: 15px;
+  height: 30px;
+  font-weight: bold;
+  border: none;
+}
+
+.todo-listitems
+{
+  list-style-type:decimal;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
