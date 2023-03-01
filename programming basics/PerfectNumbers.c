@@ -12,7 +12,7 @@ int isPerfectNumber(int n)
 	        sum = 0;
 	        for(j=1; j<i; j++)
 	        {
-	            if(i % j == 0)
+	            if(i%j==0)
 	            {
 	            	sum = sum + j;
 	            }

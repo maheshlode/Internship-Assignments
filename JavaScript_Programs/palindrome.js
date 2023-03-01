@@ -28,6 +28,7 @@ function isStringPalindrome(string)
 	}
 }
 
+// function to test isStringPalindrome() function
 function checkIsStringPalindrome(string, expectedOutput)
 {
     if(isStringPalindrome(string)==expectedOutput)
