@@ -21,7 +21,6 @@ function matrixMultiplication(row1,col1,row2,col2,matrix1,matrix2)
                 resultMatrix[i][j]=sum;
             }
         }
-        //console.log(resultMatrix);
         return resultMatrix;
     }
 }
